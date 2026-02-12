@@ -36,10 +36,10 @@ export const trustBrands = [
 ];
 
 export const portfolioPreview = [
-  'https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?auto=format&fit=crop&w=700&q=80',
-  'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=700&q=80',
-  'https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=700&q=80',
-  'https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=700&q=80',
+  'https://picsum.photos/seed/rb-portfolio-1/700/700',
+  'https://picsum.photos/seed/rb-portfolio-2/700/700',
+  'https://picsum.photos/seed/rb-portfolio-3/700/700',
+  'https://picsum.photos/seed/rb-portfolio-4/700/700',
 ];
 
 export const services = [
@@ -93,25 +93,25 @@ export const projectShowcase = [
     name: 'Meridian Residence',
     location: 'Bengaluru',
     description: 'Contemporary 3BHK interior execution with neutral palette and layered lighting.',
-    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://picsum.photos/seed/rb-project-1/1200/800',
   },
   {
     name: 'Axis Retail Studio',
     location: 'Mysuru',
     description: 'Retail fit-out focused on display circulation and durable hardware components.',
-    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://picsum.photos/seed/rb-project-2/1200/800',
   },
   {
     name: 'Southline Office',
     location: 'Chennai',
     description: 'Commercial interior package with acoustic zoning and clean execution milestones.',
-    image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://picsum.photos/seed/rb-project-3/1200/800',
   },
   {
     name: 'Verde Kitchen Suite',
     location: 'Hyderabad',
     description: 'Modular kitchen package with premium laminates, integrated lighting, and utility zones.',
-    image: 'https://images.unsplash.com/photo-1556909204-7e0c6c8e5f88?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://picsum.photos/seed/rb-project-4/1200/800',
   },
 ];
 

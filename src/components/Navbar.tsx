@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { pageTransition } from './animationConfig';
 
 const links = [
   { label: 'About', to: '/about' },
@@ -18,7 +20,12 @@ export function Navbar() {
   };
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/90 backdrop-blur-xl">
+    <motion.header
+      initial={{ opacity: 0, y: -24 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={pageTransition}
+      className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/90 backdrop-blur-xl"
+    >
       <nav className="mx-auto grid max-w-7xl grid-cols-[1fr_auto] items-center gap-4 px-4 py-4 sm:px-6 lg:grid-cols-[1fr_auto_1fr] lg:px-8" aria-label="Main">
         <Link to="/" className="flex items-center gap-3" onClick={closeMenu}>
           <span className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/30 text-xs text-[var(--accent-soft)]">
@@ -154,6 +161,6 @@ export function Navbar() {
           </ul>
         </div>
       )}
-    </header>
+    </motion.header>
   );
 }

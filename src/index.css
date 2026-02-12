@@ -22,6 +22,10 @@ body,
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Inter", "Segoe UI", sans-serif;
@@ -61,7 +65,13 @@ h3,
 }
 
 .marquee-track {
-  animation: marquee 24s linear infinite;
+  width: max-content;
+  white-space: nowrap;
+  animation: marquee 28s linear infinite;
+}
+
+.marquee-group {
+  white-space: nowrap;
 }
 
 @keyframes marquee {
@@ -69,6 +79,10 @@ h3,
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(calc(-50% - 20px));
   }
+}
+
+.btn-outline-pill {
+  background: transparent;
 }

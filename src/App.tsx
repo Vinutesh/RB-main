@@ -1,5 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
+import type { ReactNode } from 'react';
 import { SiteLayout } from './components/SiteLayout';
+import { PageTransition } from './components/PageTransition';
 import { AboutPage } from './pages/AboutPage';
 import { ContactPage } from './pages/ContactPage';
 import { GalleryPage } from './pages/GalleryPage';
@@ -14,26 +18,37 @@ import { ProductPage } from './pages/ProductPage';
 import { TermsPage } from './pages/TermsPage';
 import { DisclaimerPage } from './pages/DisclaimerPage';
 
+function AppRoutes() {
+  const location = useLocation();
+  const withTransition = (node: ReactNode) => <PageTransition>{node}</PageTransition>;
+
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<SiteLayout />}>
+          <Route index element={withTransition(<HomePage />)} />
+          <Route path="about" element={withTransition(<AboutPage />)} />
+          <Route path="product" element={withTransition(<ProductPage />)} />
+          <Route path="gallery" element={withTransition(<GalleryPage />)} />
+          <Route path="contact" element={withTransition(<ContactPage />)} />
+          <Route path="interior-designing" element={withTransition(<InteriorLandingPage />)} />
+          <Route path="interior-designing/about" element={withTransition(<InteriorAboutPage />)} />
+          <Route path="interior-designing/gallery" element={withTransition(<InteriorGalleryPage />)} />
+          <Route path="interior-designing/contact" element={withTransition(<InteriorContactPage />)} />
+          <Route path="terms" element={withTransition(<TermsPage />)} />
+          <Route path="privacy" element={withTransition(<PrivacyPage />)} />
+          <Route path="disclaimer" element={withTransition(<DisclaimerPage />)} />
+          <Route path="*" element={withTransition(<NotFoundPage />)} />
+        </Route>
+      </Routes>
+    </AnimatePresence>
+  );
+}
+
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<SiteLayout />}>
-          <Route index element={<HomePage />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="product" element={<ProductPage />} />
-          <Route path="gallery" element={<GalleryPage />} />
-          <Route path="contact" element={<ContactPage />} />
-          <Route path="interior-designing" element={<InteriorLandingPage />} />
-          <Route path="interior-designing/about" element={<InteriorAboutPage />} />
-          <Route path="interior-designing/gallery" element={<InteriorGalleryPage />} />
-          <Route path="interior-designing/contact" element={<InteriorContactPage />} />
-          <Route path="terms" element={<TermsPage />} />
-          <Route path="privacy" element={<PrivacyPage />} />
-          <Route path="disclaimer" element={<DisclaimerPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Route>
-      </Routes>
+      <AppRoutes />
     </BrowserRouter>
   );
 }

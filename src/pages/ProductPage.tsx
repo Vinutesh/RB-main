@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+import { hoverLift } from '../components/animationConfig';
 import { Seo } from '../components/Seo';
 import { buildWhatsAppLink, contactDetails, hardwareBrands, hardwareCategories } from '../data/siteData';
 
@@ -24,10 +26,10 @@ export function ProductPage() {
         <h2 className="text-2xl font-semibold">Product Categories</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {hardwareCategories.map((category) => (
-            <article key={category} className="rounded-2xl border border-white/10 bg-[#141414] p-5">
+            <motion.article key={category} whileHover={hoverLift} className="rounded-2xl border border-white/10 bg-[#141414] p-5">
               <h3 className="font-semibold text-[var(--text-main)]">{category}</h3>
               <p className="mt-2 text-sm text-[var(--text-soft)]">Trade-grade options available for bulk requirements.</p>
-            </article>
+            </motion.article>
           ))}
         </div>
       </section>
@@ -37,9 +39,9 @@ export function ProductPage() {
         <p className="mt-2 text-sm text-[var(--text-soft)]">Placeholder brand list ready for replacement with confirmed partners.</p>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {hardwareBrands.map((brand) => (
-            <article key={brand} className="rounded-2xl border border-white/10 bg-[var(--bg-secondary)] p-5">
+            <motion.article key={brand} whileHover={hoverLift} className="rounded-2xl border border-white/10 bg-[var(--bg-secondary)] p-5">
               <h3 className="font-semibold text-[var(--accent-soft)]">{brand}</h3>
-            </article>
+            </motion.article>
           ))}
         </div>
       </section>
