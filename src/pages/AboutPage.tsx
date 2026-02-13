@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+﻿import { motion } from 'framer-motion';
 import { Seo } from '../components/Seo';
 import { fadeInUp, staggerContainer, gridItemVariants, scaleIn } from '../components/animationConfig';
 
@@ -6,8 +6,8 @@ export function AboutPage() {
   return (
     <>
       <Seo
-        title="About Us | R.B Enterprises & R.B Interiors - 15+ Years of Excellence"
-        description="Discover the story behind R.B Enterprises' wholesale hardware excellence and R.B Interiors' premium design services. Over 15 years of industry leadership and 500+ successful projects."
+        title="About Us | R.B Group - Enterprises & Interiors"
+        description="Learn how R.B Group unifies R.B Enterprises and R.B Interiors to deliver dependable hardware supply and quality-focused interior execution."
       />
 
       <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
@@ -18,22 +18,23 @@ export function AboutPage() {
           transition={{ duration: 0.6 }}
         >
           <motion.h1 
-            className="font-serif text-4xl text-[var(--accent-soft)] sm:text-5xl"
+            className="font-serif text-4xl text-(--accent-soft) sm:text-5xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Crafting Excellence Since 2010
+            R.B Group: Built on Trust, Driven by Execution
           </motion.h1>
           <motion.p 
-            className="mt-4 max-w-3xl text-lg text-[var(--text-soft)]"
+            className="mt-4 max-w-3xl text-lg text-(--text-soft)"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            R.B Enterprises and R.B Interiors operate as integrated verticals under unified leadership, 
-            ensuring seamless coordination between wholesale hardware supply and premium interior execution. 
-            Our specialized approach delivers exceptional results for discerning clients and project teams.
+            R.B Group brings together two specialized branches under one leadership team. 
+            R.B Enterprises supports project procurement with dependable hardware supply, while 
+            R.B Interiors delivers design-led execution for residential and commercial spaces. 
+            Together, we provide a practical, accountable, and end-to-end partnership model.
           </motion.p>
         </motion.div>
       </section>
@@ -50,24 +51,23 @@ export function AboutPage() {
           aria-labelledby="rb-enterprises-heading"
         >
           <h2 id="rb-enterprises-heading" className="text-2xl font-semibold">R.B Enterprises</h2>
-          <p className="mt-4 text-[var(--text-soft)] leading-relaxed">
-            Premier wholesale interior hardware supplier catering exclusively to B2B requirements. 
-            We partner with contractors, builders, architects, and procurement professionals to deliver 
-            comprehensive hardware solutions with reliable stock availability, competitive pricing, and 
-            expert technical support.
+          <p className="mt-4 text-(--text-soft) leading-relaxed">
+            The hardware and procurement branch of R.B Group. We serve contractors, builders, architects, 
+            and institutional buyers with reliable stock availability, practical product guidance, 
+            and streamlined bulk-order support.
           </p>
           <div className="mt-6 space-y-3">
             <div className="flex items-center gap-3">
-              <div className="h-2 w-2 rounded-full bg-[var(--accent)]" aria-hidden="true" />
-              <p className="text-sm text-[var(--text-main)]">Bulk order specialists</p>
+              <div className="h-2 w-2 rounded-full bg-(--accent)" aria-hidden="true" />
+              <p className="text-sm text-(--text-main)">Bulk hardware procurement support</p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="h-2 w-2 rounded-full bg-[var(--accent)]" aria-hidden="true" />
-              <p className="text-sm text-[var(--text-main)]">24-48 hour dispatch guarantee</p>
+              <div className="h-2 w-2 rounded-full bg-(--accent)" aria-hidden="true" />
+              <p className="text-sm text-(--text-main)">Consistent stock planning and dispatch</p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="h-2 w-2 rounded-full bg-[var(--accent)]" aria-hidden="true" />
-              <p className="text-sm text-[var(--text-main)]">Technical consultation included</p>
+              <div className="h-2 w-2 rounded-full bg-(--accent)" aria-hidden="true" />
+              <p className="text-sm text-(--text-main)">Category expertise for project teams</p>
             </div>
           </div>
         </motion.article>
@@ -83,23 +83,23 @@ export function AboutPage() {
           aria-labelledby="rb-interiors-heading"
         >
           <h2 id="rb-interiors-heading" className="text-2xl font-semibold">R.B Interiors</h2>
-          <p className="mt-4 text-[var(--text-soft)] leading-relaxed">
-            Full-service interior design and execution partner delivering bespoke residential and commercial 
-            environments. From conceptual design through final handover, we maintain rigorous quality standards, 
-            transparent communication, and disciplined project management at every milestone.
+          <p className="mt-4 text-(--text-soft) leading-relaxed">
+            The design and execution branch of R.B Group. From concept development to final handover, 
+            we deliver interior spaces with clarity, material discipline, and milestone-based execution 
+            across residential and commercial projects.
           </p>
           <div className="mt-6 space-y-3">
             <div className="flex items-center gap-3">
-              <div className="h-2 w-2 rounded-full bg-[var(--accent)]" aria-hidden="true" />
-              <p className="text-sm text-[var(--text-main)]">End-to-end design execution</p>
+              <div className="h-2 w-2 rounded-full bg-(--accent)" aria-hidden="true" />
+              <p className="text-sm text-(--text-main)">Concept-to-handover delivery model</p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="h-2 w-2 rounded-full bg-[var(--accent)]" aria-hidden="true" />
-              <p className="text-sm text-[var(--text-main)]">Milestone-based quality checks</p>
+              <div className="h-2 w-2 rounded-full bg-(--accent)" aria-hidden="true" />
+              <p className="text-sm text-(--text-main)">Structured milestone quality reviews</p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="h-2 w-2 rounded-full bg-[var(--accent)]" aria-hidden="true" />
-              <p className="text-sm text-[var(--text-main)]">Premium material partnerships</p>
+              <div className="h-2 w-2 rounded-full bg-(--accent)" aria-hidden="true" />
+              <p className="text-sm text-(--text-main)">Design-first material and finish planning</p>
             </div>
           </div>
         </motion.article>
@@ -112,16 +112,16 @@ export function AboutPage() {
           viewport={{ once: true }}
           variants={fadeInUp}
         >
-          <h2 className="text-3xl font-semibold">Our Journey</h2>
-          <p className="mt-4 max-w-4xl text-lg leading-relaxed text-[var(--text-soft)]">
-            Founded in 2010 with a focus on trade-grade hardware supply, R.B Enterprises evolved organically 
-            to meet growing demand for integrated interior solutions. This expansion led to the establishment 
-            of R.B Interiors in 2015, creating a comprehensive service ecosystem that addresses both product 
-            supply and design execution needs.
+          <h2 className="text-3xl font-semibold">Our Story</h2>
+          <p className="mt-4 max-w-4xl text-lg leading-relaxed text-(--text-soft)">
+            R.B Group began with R.B Enterprises in 2010, focused on delivering trade-grade hardware 
+            with dependable service for growing project demand. As client requirements expanded beyond supply, 
+            the group launched R.B Interiors in 2015 to provide integrated design and execution capabilities.
           </p>
-          <p className="mt-4 max-w-4xl text-lg leading-relaxed text-[var(--text-soft)]">
-            Today, we serve over 25,500 clients across residential, commercial, and institutional sectors, 
-            maintaining our founding commitment to quality, transparency, and customer-centric service delivery.
+          <p className="mt-4 max-w-4xl text-lg leading-relaxed text-(--text-soft)">
+            Today, R.B Group operates with a dual-branch model that combines procurement strength and 
+            execution accountability. Our commitment remains the same: quality-first delivery, transparent 
+            communication, and long-term client relationships.
           </p>
         </motion.div>
       </section>
@@ -134,7 +134,7 @@ export function AboutPage() {
           variants={fadeInUp}
         >
           <h2 id="values-heading" className="text-3xl font-semibold">Core Values</h2>
-          <p className="mt-3 text-[var(--text-soft)]">The principles that guide every decision and interaction</p>
+          <p className="mt-3 text-(--text-soft)">The operating principles behind every R.B Group engagement</p>
         </motion.div>
         
         <motion.div 
@@ -147,35 +147,35 @@ export function AboutPage() {
           {[
             {
               title: 'Uncompromising Quality',
-              description: 'Every product vetted, every detail verified, every standard exceeded'
+              description: 'Clear standards in supply, design, and execution'
             },
             {
               title: 'Transparent Communication',
-              description: 'Clear timelines, honest assessments, proactive updates'
+              description: 'Straightforward timelines, decisions, and status updates'
             },
             {
               title: 'Execution Excellence',
-              description: 'Milestone discipline, quality checkpoints, accountable delivery'
+              description: 'Disciplined delivery through measurable milestones'
             },
             {
-              title: 'Lasting Partnerships',
-              description: 'Built on trust, sustained through consistency, valued for reliability'
+              title: 'Client Partnership',
+              description: 'Long-term collaboration built on reliability and trust'
             }
           ].map((item, index) => (
             <motion.article 
               key={item.title} 
               variants={gridItemVariants}
-              className="glass-panel rounded-2xl p-6 hover:border-[var(--accent)]/40"
+              className="glass-panel rounded-2xl p-6 hover:border-(--accent)/40"
               role="article"
               aria-label={item.title}
             >
-              <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--accent)]/20">
-                <span className="text-xl font-bold text-[var(--accent-soft)]" aria-hidden="true">
+              <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-(--accent)/20">
+                <span className="text-xl font-bold text-(--accent-soft)" aria-hidden="true">
                   {index + 1}
                 </span>
               </div>
-              <h3 className="font-semibold text-[var(--text-main)]">{item.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-[var(--text-soft)]">{item.description}</p>
+              <h3 className="font-semibold text-(--text-main)">{item.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-(--text-soft)">{item.description}</p>
             </motion.article>
           ))}
         </motion.div>
@@ -188,7 +188,7 @@ export function AboutPage() {
           viewport={{ once: true }}
           variants={fadeInUp}
         >
-          <h2 id="milestones-heading" className="text-3xl font-semibold">Key Milestones</h2>
+          <h2 id="milestones-heading" className="text-3xl font-semibold">R.B Group Milestones</h2>
         </motion.div>
         
         <motion.div 
@@ -199,26 +199,26 @@ export function AboutPage() {
           viewport={{ once: true }}
         >
           {[
-            { year: '2010', event: 'R.B Enterprises established as wholesale hardware supplier' },
-            { year: '2015', event: 'R.B Interiors division launched for design & execution' },
-            { year: '2018', event: 'Expanded to 80+ team members, 5000+ sq ft warehouse' },
-            { year: '2020', event: 'Digital transformation: online catalog & streamlined ordering' },
-            { year: '2023', event: '500+ projects completed, 25,500+ clients served nationwide' },
+            { year: '2010', event: 'R.B Enterprises established as the group hardware supply foundation' },
+            { year: '2015', event: 'R.B Interiors launched to provide dedicated design and execution services' },
+            { year: '2018', event: 'Operational expansion with larger team capacity and warehousing support' },
+            { year: '2020', event: 'Process modernization for faster coordination and client response' },
+            { year: '2023', event: 'Strengthened dual-branch model serving residential and commercial sectors' },
           ].map((milestone) => (
             <motion.div 
               key={milestone.year} 
               variants={gridItemVariants}
-              className="flex gap-6 rounded-xl border border-white/10 bg-[#141414] p-5 hover:border-[var(--accent)]/30 transition-all duration-300"
+              className="flex gap-6 rounded-xl border border-white/10 bg-[#141414] p-5 hover:border-(--accent)/30 transition-all duration-300"
               role="article"
               aria-label={`Milestone ${milestone.year}`}
             >
               <div className="shrink-0">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--accent)]/20">
-                  <span className="font-serif text-xl font-bold text-[var(--accent-soft)]">{milestone.year}</span>
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-(--accent)/20">
+                  <span className="font-serif text-xl font-bold text-(--accent-soft)">{milestone.year}</span>
                 </div>
               </div>
               <div className="self-center">
-                <p className="text-[var(--text-main)]">{milestone.event}</p>
+                <p className="text-(--text-main)">{milestone.event}</p>
               </div>
             </motion.div>
           ))}
@@ -227,7 +227,7 @@ export function AboutPage() {
 
       <section className="mx-auto mt-16 max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
         <motion.div
-          className="relative overflow-hidden rounded-3xl border border-white/20 bg-gradient-to-br from-[#1a1a1a] via-[#141414] to-[#0f0f0f] p-10 text-center sm:p-12"
+          className="relative overflow-hidden rounded-3xl border border-white/20 bg-linear-to-br from-[#1a1a1a] via-[#141414] to-[#0f0f0f] p-10 text-center sm:p-12"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -240,26 +240,26 @@ export function AboutPage() {
           </div>
           <div className="relative">
             <h2 className="font-serif text-3xl text-white sm:text-4xl">
-              Partner with Excellence
+              Partner with R.B Group
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-[var(--text-soft)]">
-              Whether you need reliable hardware supply or comprehensive interior execution, 
-              we're ready to support your vision with expertise and dedication.
+            <p className="mx-auto mt-4 max-w-2xl text-(--text-soft)">
+              Whether you need hardware procurement through R.B Enterprises or design and execution 
+              through R.B Interiors, our team is ready to support your next project.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a
                 href="/contact"
-                className="inline-flex min-h-12 items-center rounded-full bg-white px-8 text-sm font-semibold text-black transition hover:bg-[var(--accent-soft)] hover:shadow-xl"
+                className="inline-flex min-h-12 items-center rounded-full px-8 bg-(--accent) font-semibold text-black transition hover:bg-(--accent-soft) hover:shadow-xl"
                 aria-label="Contact us to start your project"
               >
-                Start Your Project
+                Talk to Our Team
               </a>
               <a
                 href="/product"
-                className="inline-flex min-h-12 items-center rounded-full border border-white px-8 text-sm font-medium text-white transition hover:bg-white hover:text-black"
+                className="inline-flex min-h-12 items-center rounded-full border border-white px-8 text-sm font-medium text-white! transition hover:bg-white hover:text-black!"
                 aria-label="View our product catalog"
               >
-                View Catalog
+                Explore Solutions
               </a>
             </div>
           </div>
@@ -268,3 +268,5 @@ export function AboutPage() {
     </>
   );
 }
+
+

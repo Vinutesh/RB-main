@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+﻿import { useEffect, useState } from 'react';
 import type { FormEvent, ChangeEvent } from 'react';
 import { motion } from 'framer-motion';
 import { Seo } from '../components/Seo';
@@ -98,7 +98,7 @@ export function ContactPage() {
           transition={{ duration: 0.6 }}
         >
           <motion.h1 
-            className="font-serif text-4xl text-[var(--accent-soft)] sm:text-5xl"
+            className="font-serif text-4xl text-(--accent-soft) sm:text-5xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -106,7 +106,7 @@ export function ContactPage() {
             Let's Start a Conversation
           </motion.h1>
           <motion.p 
-            className="mt-4 max-w-3xl text-lg text-[var(--text-soft)]"
+            className="mt-4 max-w-3xl text-lg text-(--text-soft)"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -125,13 +125,13 @@ export function ContactPage() {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <h2 className="text-2xl font-semibold">Send Your Enquiry</h2>
-          <p className="mt-2 text-sm text-[var(--text-soft)]">
+          <p className="mt-2 text-sm text-(--text-soft)">
             Fill out the form below and we'll respond within 24 hours
           </p>
           
           <form className="mt-6 space-y-5" onSubmit={onSubmit} noValidate>
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-[var(--text-soft)]">
+              <label htmlFor="name" className="block text-sm font-medium text-(--text-soft)">
                 Full Name <span className="text-red-400" aria-label="required">*</span>
               </label>
               <input
@@ -142,7 +142,7 @@ export function ContactPage() {
                 value={formData.name}
                 onChange={handleChange}
                 className={`mt-2 min-h-12 w-full rounded-xl border px-4 bg-black/20 transition-all duration-300 ${
-                  errors.name ? 'border-red-500' : 'border-white/15 focus:border-[var(--accent)]'
+                  errors.name ? 'border-red-500' : 'border-white/15 focus:border-(--accent)'
                 }`}
                 placeholder="Enter your full name"
                 aria-required="true"
@@ -157,7 +157,7 @@ export function ContactPage() {
             </div>
 
             <div>
-              <label htmlFor="phone" className="block text-sm font-medium text-[var(--text-soft)]">
+              <label htmlFor="phone" className="block text-sm font-medium text-(--text-soft)">
                 Phone Number <span className="text-red-400" aria-label="required">*</span>
               </label>
               <input
@@ -168,7 +168,7 @@ export function ContactPage() {
                 value={formData.phone}
                 onChange={handleChange}
                 className={`mt-2 min-h-12 w-full rounded-xl border px-4 bg-black/20 transition-all duration-300 ${
-                  errors.phone ? 'border-red-500' : 'border-white/15 focus:border-[var(--accent)]'
+                  errors.phone ? 'border-red-500' : 'border-white/15 focus:border-(--accent)'
                 }`}
                 placeholder="10-digit mobile number"
                 aria-required="true"
@@ -183,8 +183,8 @@ export function ContactPage() {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-[var(--text-soft)]">
-                Email Address <span className="text-sm text-[var(--text-soft)]">(optional)</span>
+              <label htmlFor="email" className="block text-sm font-medium text-(--text-soft)">
+                Email Address <span className="text-sm text-(--text-soft)">(optional)</span>
               </label>
               <input
                 id="email"
@@ -193,7 +193,7 @@ export function ContactPage() {
                 value={formData.email}
                 onChange={handleChange}
                 className={`mt-2 min-h-12 w-full rounded-xl border px-4 bg-black/20 transition-all duration-300 ${
-                  errors.email ? 'border-red-500' : 'border-white/15 focus:border-[var(--accent)]'
+                  errors.email ? 'border-red-500' : 'border-white/15 focus:border-(--accent)'
                 }`}
                 placeholder="your.email@example.com"
                 aria-invalid={!!errors.email}
@@ -207,7 +207,7 @@ export function ContactPage() {
             </div>
 
             <div>
-              <label htmlFor="enquiryType" className="block text-sm font-medium text-[var(--text-soft)]">
+              <label htmlFor="enquiryType" className="block text-sm font-medium text-(--text-soft)">
                 Enquiry Type <span className="text-red-400" aria-label="required">*</span>
               </label>
               <select
@@ -217,7 +217,7 @@ export function ContactPage() {
                 value={formData.enquiryType}
                 onChange={handleChange}
                 className={`mt-2 min-h-12 w-full rounded-xl border px-4 bg-black/20 transition-all duration-300 ${
-                  errors.enquiryType ? 'border-red-500' : 'border-white/15 focus:border-[var(--accent)]'
+                  errors.enquiryType ? 'border-red-500' : 'border-white/15 focus:border-(--accent)'
                 }`}
                 aria-required="true"
                 aria-invalid={!!errors.enquiryType}
@@ -236,7 +236,7 @@ export function ContactPage() {
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-[var(--text-soft)]">
+              <label htmlFor="message" className="block text-sm font-medium text-(--text-soft)">
                 Your Message <span className="text-red-400" aria-label="required">*</span>
               </label>
               <textarea
@@ -247,7 +247,7 @@ export function ContactPage() {
                 onChange={handleChange}
                 rows={5}
                 className={`mt-2 w-full rounded-xl border px-4 py-3 bg-black/20 transition-all duration-300 ${
-                  errors.message ? 'border-red-500' : 'border-white/15 focus:border-[var(--accent)]'
+                  errors.message ? 'border-red-500' : 'border-white/15 focus:border-(--accent)'
                 }`}
                 placeholder="Please describe your requirements in detail..."
                 aria-required="true"
@@ -262,11 +262,11 @@ export function ContactPage() {
             </div>
 
             <div className="rounded-xl border border-white/10 bg-white/5 p-4">
-              <p className="text-xs leading-relaxed text-[var(--text-soft)]">
+              <p className="text-xs leading-relaxed text-(--text-soft)">
                 <strong>Privacy Notice:</strong> By submitting this form, you consent to being contacted 
                 via phone, WhatsApp, or email regarding your enquiry. We respect your privacy and will never 
                 share your personal information with third parties. See our{' '}
-                <a href="/privacy" className="text-[var(--accent-soft)] hover:underline">Privacy Policy</a>.
+                <a href="/privacy" className="text-(--accent-soft) hover:underline">Privacy Policy</a>.
               </p>
             </div>
 
@@ -276,8 +276,8 @@ export function ContactPage() {
               whileTap={buttonTap}
               className={`inline-flex min-h-14 w-full items-center justify-center rounded-full font-semibold text-black transition-all duration-300 ${
                 isSubmitting 
-                  ? 'bg-[var(--accent)]/50 cursor-not-allowed' 
-                  : 'bg-[var(--accent)] hover:bg-[var(--accent-soft)] hover:shadow-xl'
+                  ? 'bg-(--accent)/50 cursor-not-allowed' 
+                  : 'bg-(--accent) hover:bg-(--accent-soft) hover:shadow-xl'
               }`}
               aria-label={isSubmitting ? "Submitting enquiry" : "Submit enquiry form"}
             >
@@ -304,7 +304,7 @@ export function ContactPage() {
             transition={{ duration: 0.6, delay: 0.5 }}
           >
             <h2 className="text-2xl font-semibold">Direct Contact Options</h2>
-            <p className="mt-2 text-sm text-[var(--text-soft)]">
+            <p className="mt-2 text-sm text-(--text-soft)">
               Prefer immediate contact? Connect with us directly
             </p>
             
@@ -314,13 +314,13 @@ export function ContactPage() {
                 target="_blank"
                 rel="noreferrer"
                 whileHover={{ x: 4 }}
-                className="group flex min-h-14 items-center gap-4 rounded-xl border border-white/20 bg-white/5 px-5 transition-all duration-300 hover:border-[var(--accent)]/40 hover:bg-white/10"
+                className="group flex min-h-14 items-center gap-4 rounded-xl border border-white/20 bg-white/5 px-5 transition-all duration-300 hover:border-(--accent)/40 hover:bg-white/10"
                 aria-label="Contact for hardware enquiry via WhatsApp"
               >
-                <span className="text-2xl" aria-hidden="true">💬</span>
+                <span className="text-2xl" aria-hidden="true">ðŸ’¬</span>
                 <div>
                   <p className="font-medium text-white">Hardware Enquiry</p>
-                  <p className="text-xs text-[var(--text-soft)]">WhatsApp - Instant Response</p>
+                  <p className="text-xs text-(--text-soft)">WhatsApp - Instant Response</p>
                 </div>
               </motion.a>
 
@@ -329,39 +329,39 @@ export function ContactPage() {
                 target="_blank"
                 rel="noreferrer"
                 whileHover={{ x: 4 }}
-                className="group flex min-h-14 items-center gap-4 rounded-xl border border-white/20 bg-white/5 px-5 transition-all duration-300 hover:border-[var(--accent)]/40 hover:bg-white/10"
+                className="group flex min-h-14 items-center gap-4 rounded-xl border border-white/20 bg-white/5 px-5 transition-all duration-300 hover:border-(--accent)/40 hover:bg-white/10"
                 aria-label="Book interior consultation via WhatsApp"
               >
-                <span className="text-2xl" aria-hidden="true">🏠</span>
+                <span className="text-2xl" aria-hidden="true">[I]</span>
                 <div>
                   <p className="font-medium text-white">Interior Consultation</p>
-                  <p className="text-xs text-[var(--text-soft)]">WhatsApp - Schedule Meeting</p>
+                  <p className="text-xs text-(--text-soft)">WhatsApp - Schedule Meeting</p>
                 </div>
               </motion.a>
 
               <motion.a
                 href={`tel:${contactDetails.phoneRaw}`}
                 whileHover={{ x: 4 }}
-                className="group flex min-h-14 items-center gap-4 rounded-xl border border-white/20 bg-white/5 px-5 transition-all duration-300 hover:border-[var(--accent)]/40 hover:bg-white/10"
+                className="group flex min-h-14 items-center gap-4 rounded-xl border border-white/20 bg-white/5 px-5 transition-all duration-300 hover:border-(--accent)/40 hover:bg-white/10"
                 aria-label={`Call us at ${contactDetails.phoneDisplay}`}
               >
-                <span className="text-2xl" aria-hidden="true">📞</span>
+                <span className="text-2xl" aria-hidden="true">ðŸ“ž</span>
                 <div>
                   <p className="font-medium text-white">{contactDetails.phoneDisplay}</p>
-                  <p className="text-xs text-[var(--text-soft)]">Mon-Sat, 9:00 AM - 7:00 PM</p>
+                  <p className="text-xs text-(--text-soft)">Mon-Sat, 9:00 AM - 7:00 PM</p>
                 </div>
               </motion.a>
 
               <motion.a
                 href={`mailto:${contactDetails.email}`}
                 whileHover={{ x: 4 }}
-                className="group flex min-h-14 items-center gap-4 rounded-xl border border-white/20 bg-white/5 px-5 transition-all duration-300 hover:border-[var(--accent)]/40 hover:bg-white/10"
+                className="group flex min-h-14 items-center gap-4 rounded-xl border border-white/20 bg-white/5 px-5 transition-all duration-300 hover:border-(--accent)/40 hover:bg-white/10"
                 aria-label="Email our team"
               >
-                <span className="text-2xl" aria-hidden="true">✉️</span>
+                <span className="text-2xl" aria-hidden="true">âœ‰ï¸</span>
                 <div>
                   <p className="font-medium text-white">{contactDetails.email}</p>
-                  <p className="text-xs text-[var(--text-soft)]">Response within 24 hours</p>
+                  <p className="text-xs text-(--text-soft)">Response within 24 hours</p>
                 </div>
               </motion.a>
             </div>
@@ -374,10 +374,10 @@ export function ContactPage() {
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <h3 className="text-xl font-semibold">Visit Our Office</h3>
-            <p className="mt-3 text-sm leading-relaxed text-[var(--text-soft)]">
+            <p className="mt-3 text-sm leading-relaxed text-(--text-soft)">
               {contactDetails.address}
             </p>
-            <div className="mt-4 space-y-2 text-sm text-[var(--text-soft)]">
+            <div className="mt-4 space-y-2 text-sm text-(--text-soft)">
               <p><strong className="text-white">Business Hours:</strong></p>
               <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
               <p>Sunday: By Appointment Only</p>
@@ -403,7 +403,7 @@ export function ContactPage() {
 
       {submitted && (
         <motion.div
-          className="fixed right-4 top-24 z-[60] max-w-md rounded-xl border border-emerald-600/40 bg-emerald-900/90 px-6 py-4 shadow-2xl backdrop-blur-sm"
+          className="fixed right-4 top-24 z-60 max-w-md rounded-xl border border-emerald-600/40 bg-emerald-900/90 px-6 py-4 shadow-2xl backdrop-blur-sm"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 100 }}
@@ -411,7 +411,7 @@ export function ContactPage() {
           aria-live="polite"
         >
           <div className="flex items-start gap-3">
-            <span className="text-2xl" aria-hidden="true">✓</span>
+            <span className="text-2xl" aria-hidden="true">âœ“</span>
             <div>
               <p className="font-semibold text-emerald-200">Enquiry Submitted Successfully!</p>
               <p className="mt-1 text-sm text-emerald-300">
@@ -424,3 +424,4 @@ export function ContactPage() {
     </>
   );
 }
+

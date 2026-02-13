@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { InteriorSubNav } from '../../components/InteriorSubNav';
 import { Seo } from '../../components/Seo';
 
@@ -12,8 +12,8 @@ export function InteriorAboutPage() {
 
       <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="rounded-3xl border border-white/10 bg-black/30 p-6 sm:p-10">
-        <h1 className="font-serif text-4xl text-[var(--accent-soft)]">R.B Interiors - About</h1>
-        <p className="mt-4 max-w-3xl text-[var(--text-soft)]">
+        <h1 className="font-serif text-4xl text-(--accent-soft)">R.B Interiors - About</h1>
+        <p className="mt-4 max-w-3xl text-(--text-soft)">
           R.B Interiors focuses on design clarity, practical detailing, and accountable execution from concept to handover.
         </p>
         <div className="mt-6">
@@ -34,7 +34,7 @@ export function InteriorAboutPage() {
           'Material and finish selection aligned to budget and longevity.',
           'Execution monitoring with milestone-based quality checks.',
         ].map((point) => (
-          <article key={point} className="rounded-2xl border border-white/10 bg-[#141414] p-5 text-sm text-[var(--text-soft)]">
+          <article key={point} className="rounded-2xl border border-white/10 bg-[#141414] p-5 text-sm text-(--text-soft)">
             {point}
           </article>
         ))}
@@ -42,3 +42,4 @@ export function InteriorAboutPage() {
     </>
   );
 }
+

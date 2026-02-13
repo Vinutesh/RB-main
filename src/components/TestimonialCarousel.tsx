@@ -37,10 +37,10 @@ export function TestimonialCarousel({ items }: TestimonialCarouselProps) {
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.7, ease: easing }}
         >
-          <p className="text-[var(--accent-soft)]">*****</p>
+          <p className="text-(--accent-soft)">*****</p>
           <p className="mt-3 max-w-2xl text-lg text-white">{current.note}</p>
           <p className="mt-6 text-sm font-medium text-white">{current.name}</p>
-          <p className="text-xs text-[var(--text-soft)]">{current.role} | Sample testimonial placeholder</p>
+          <p className="text-xs text-(--text-soft)">{current.role} | Sample testimonial placeholder</p>
         </motion.div>
       </AnimatePresence>
 

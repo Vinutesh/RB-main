@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { InteriorSubNav } from '../../components/InteriorSubNav';
 import { Seo } from '../../components/Seo';
 import { TestimonialCarousel } from '../../components/TestimonialCarousel';
@@ -24,9 +24,9 @@ export function InteriorLandingPage() {
 
       <section className="relative mx-auto max-w-7xl px-4 pb-6 pt-8 sm:px-6 lg:px-8">
         <div className="overflow-hidden rounded-3xl border border-white/10 bg-[linear-gradient(140deg,#0f0f0f,#1a1a1a)] p-8 sm:p-12">
-          <p className="text-sm uppercase tracking-[0.24em] text-[var(--accent-soft)]">R.B Interiors</p>
+          <p className="text-sm uppercase tracking-[0.24em] text-(--accent-soft)">R.B Interiors</p>
           <h1 className="mt-4 font-serif text-4xl text-white sm:text-6xl">Luxury Interior Design & Execution</h1>
-          <p className="mt-4 max-w-2xl text-[var(--text-soft)]">
+          <p className="mt-4 max-w-2xl text-(--text-soft)">
             Portfolio-led interior execution for residential and commercial projects with premium detailing and timeline
             accountability.
           </p>
@@ -35,15 +35,15 @@ export function InteriorLandingPage() {
               href={consultationWa}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex min-h-12 items-center rounded-full bg-white px-6 text-sm font-semibold text-black"
+              className="inline-flex min-h-12 items-center rounded-full bg-(--accent) px-6 text-sm font-semibold text-black transition hover:bg-(--accent-soft) hover:shadow-xl"
             >
               Book a Consultation
             </a>
             <Link
               to="/"
-              className="inline-flex min-h-12 items-center rounded-full border border-white px-6 text-sm font-semibold text-white"
+              className="inline-flex min-h-12 items-center rounded-full border border-white px-6 text-sm font-semibold text-white! transition hover:bg-white hover:text-black!"
             >
-              ← Back to R.B Enterprises
+              ← Back to R.B Group
             </Link>
           </div>
         </div>
@@ -82,7 +82,7 @@ export function InteriorLandingPage() {
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {interiorSteps.map((step, index) => (
             <article key={step} className="rounded-2xl border border-white/10 bg-[#141414] p-4">
-              <p className="text-xs uppercase tracking-[0.2em] text-[var(--accent-soft)]">Step {index + 1}</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-(--accent-soft)">Step {index + 1}</p>
               <h3 className="mt-2 font-semibold">{step}</h3>
             </article>
           ))}
@@ -106,7 +106,7 @@ export function InteriorLandingPage() {
 
       <section className="mx-auto mt-16 max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="font-serif text-4xl text-white">Testimonials</h2>
-        <p className="mt-2 text-sm text-[var(--text-soft)]">Sample placeholders for presentation only.</p>
+        <p className="mt-2 text-sm text-(--text-soft)">Sample placeholders for presentation only.</p>
         <div className="mt-6 max-w-3xl">
           <TestimonialCarousel items={testimonials.interiors} />
         </div>
@@ -118,7 +118,7 @@ export function InteriorLandingPage() {
             <img src={project.image} alt={project.name} className="h-56 w-full object-cover" loading="lazy" />
             <div className="p-6">
               <h3 className="font-serif text-2xl">{project.name}</h3>
-              <p className="mt-2 text-sm text-[var(--text-soft)]">{project.description}</p>
+              <p className="mt-2 text-sm text-(--text-soft)">{project.description}</p>
             </div>
           </article>
         ))}
@@ -132,11 +132,14 @@ export function InteriorLandingPage() {
               href={consultationWa}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex min-h-12 items-center rounded-full bg-white px-6 text-sm font-semibold text-black"
+              className="inline-flex min-h-12 items-center rounded-full bg-(--accent) px-6 text-sm font-semibold text-black transition hover:bg-(--accent-soft) hover:shadow-xl"
             >
               Book Interior Consultation
             </a>
-            <Link to="/contact" className="inline-flex min-h-12 items-center rounded-full border border-white px-6 text-sm">
+            <Link
+              to="/contact"
+              className="inline-flex min-h-12 items-center rounded-full border border-white px-6 text-sm font-semibold text-white! transition hover:bg-white hover:text-black!"
+            >
               Contact Team
             </Link>
           </div>
@@ -145,3 +148,5 @@ export function InteriorLandingPage() {
     </>
   );
 }
+
+

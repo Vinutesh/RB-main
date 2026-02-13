@@ -10,8 +10,8 @@ export function InteriorGalleryPage() {
 
       <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="rounded-3xl border border-white/10 bg-black/30 p-6 sm:p-10">
-        <h1 className="font-serif text-4xl text-[var(--accent-soft)]">Interior Gallery</h1>
-        <p className="mt-4 text-[var(--text-soft)]">Interior project visuals only. Hardware catalog is intentionally excluded here.</p>
+        <h1 className="font-serif text-4xl text-(--accent-soft)">Interior Gallery</h1>
+        <p className="mt-4 text-(--text-soft)">Interior project visuals only. Hardware catalog is intentionally excluded here.</p>
         <div className="mt-6">
           <Link to="/" className="inline-flex min-h-11 items-center rounded-full border border-white px-5 text-sm">
             ← Back to R.B Enterprises

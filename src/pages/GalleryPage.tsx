@@ -14,8 +14,8 @@ export function GalleryPage() {
 
       <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="rounded-3xl border border-white/10 bg-black/30 p-6 sm:p-10">
-        <h1 className="font-serif text-4xl text-[var(--accent-soft)]">Gallery</h1>
-        <p className="mt-4 text-[var(--text-soft)]">Hardware visuals and interior before/after style placeholders.</p>
+        <h1 className="font-serif text-4xl text-(--accent-soft)">Gallery</h1>
+        <p className="mt-4 text-(--text-soft)">Hardware visuals and interior before/after style placeholders.</p>
         </div>
       </section>
 
@@ -52,7 +52,7 @@ export function GalleryPage() {
       </section>
 
       {selected && (
-        <div className="fixed inset-0 z-[60] flex items-center justify-center bg-black/80 px-4" onClick={() => setSelected(null)} role="presentation">
+        <div className="fixed inset-0 z-60 flex items-center justify-center bg-black/80 px-4" onClick={() => setSelected(null)} role="presentation">
           <div className="relative w-full max-w-5xl">
             <button
               type="button"

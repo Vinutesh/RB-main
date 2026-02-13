@@ -18,8 +18,8 @@ export function InteriorSubNav() {
               className={({ isActive }) =>
                 `inline-flex min-h-11 items-center rounded-full border px-5 py-2 text-sm font-semibold transition ${
                   isActive
-                    ? 'border-[var(--accent)] bg-[var(--accent)]/10 text-[var(--accent-soft)]'
-                    : 'border-white/20 text-[var(--text-soft)] hover:border-[var(--accent)] hover:text-[var(--text-main)]'
+                    ? 'border-(--accent) bg-(--accent)/10 text-(--accent-soft)'
+                    : 'border-white/20 text-(--text-soft) hover:border-(--accent) hover:text-(--text-main)'
                 }`
               }
             >

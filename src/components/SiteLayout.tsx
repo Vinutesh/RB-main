@@ -5,7 +5,7 @@ import { WhatsAppWidget } from './WhatsAppWidget';
 
 export function SiteLayout() {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-transparent text-[var(--text-main)]">
+    <div className="min-h-screen overflow-x-hidden bg-transparent text-(--text-main)">
       <Navbar />
       <main className="pt-20 md:pt-24">
         <Outlet />
