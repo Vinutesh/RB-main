@@ -129,7 +129,7 @@ export function HomePage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-(--accent-soft)">â˜…â˜…â˜…â˜…â˜…</p>
+            <p className="text-(--accent-soft)">{'\u2605\u2605\u2605\u2605\u2605'}</p>
             <p className="mt-2 text-xl font-semibold text-white">Exceptional Service Standards</p>
             <p className="mt-1 text-sm text-(--text-soft)">Over 25,500 satisfied clients nationwide</p>
           </motion.div>
@@ -281,7 +281,7 @@ export function HomePage() {
                     to={service.cta}
                     className="btn-outline-pill mt-6 inline-flex min-h-12 items-center rounded-full border border-white px-6 text-sm font-medium text-white"
                   >
-                    Explore This Service â†’
+                    Explore This Service →
                   </Link>
                 </motion.div>
               </div>

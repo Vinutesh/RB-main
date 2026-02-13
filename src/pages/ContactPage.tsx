@@ -317,7 +317,11 @@ export function ContactPage() {
                 className="group flex min-h-14 items-center gap-4 rounded-xl border border-white/20 bg-white/5 px-5 transition-all duration-300 hover:border-(--accent)/40 hover:bg-white/10"
                 aria-label="Contact for hardware enquiry via WhatsApp"
               >
-                <span className="text-2xl" aria-hidden="true">ðŸ’¬</span>
+                <span className="text-2xl" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current">
+                    <path d="M11.98 2.004a9.94 9.94 0 0 0-8.63 14.88L2 22l5.26-1.33a9.96 9.96 0 1 0 4.72-18.67Zm0 18.12a8.16 8.16 0 0 1-4.16-1.14l-.3-.18-3.12.79.83-3.04-.2-.31a8.18 8.18 0 1 1 6.95 3.88Zm4.5-6.13c-.25-.13-1.48-.73-1.7-.82-.23-.08-.39-.12-.55.13-.17.25-.64.82-.79.99-.15.16-.3.19-.56.06-.25-.13-1.07-.4-2.03-1.27-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.11-.52.12-.12.25-.3.38-.45.12-.14.16-.25.24-.42.08-.16.04-.31-.02-.44-.07-.12-.56-1.35-.77-1.84-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.43 1.03 2.6.12.16 1.75 2.67 4.23 3.75.59.25 1.06.4 1.42.51.59.18 1.13.16 1.56.1.47-.07 1.48-.6 1.69-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z" />
+                  </svg>
+                </span>
                 <div>
                   <p className="font-medium text-white">Hardware Enquiry</p>
                   <p className="text-xs text-(--text-soft)">WhatsApp - Instant Response</p>
@@ -332,7 +336,11 @@ export function ContactPage() {
                 className="group flex min-h-14 items-center gap-4 rounded-xl border border-white/20 bg-white/5 px-5 transition-all duration-300 hover:border-(--accent)/40 hover:bg-white/10"
                 aria-label="Book interior consultation via WhatsApp"
               >
-                <span className="text-2xl" aria-hidden="true">[I]</span>
+                <span className="text-2xl" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current">
+                    <path d="M11.98 2.004a9.94 9.94 0 0 0-8.63 14.88L2 22l5.26-1.33a9.96 9.96 0 1 0 4.72-18.67Zm0 18.12a8.16 8.16 0 0 1-4.16-1.14l-.3-.18-3.12.79.83-3.04-.2-.31a8.18 8.18 0 1 1 6.95 3.88Zm4.5-6.13c-.25-.13-1.48-.73-1.7-.82-.23-.08-.39-.12-.55.13-.17.25-.64.82-.79.99-.15.16-.3.19-.56.06-.25-.13-1.07-.4-2.03-1.27-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.11-.52.12-.12.25-.3.38-.45.12-.14.16-.25.24-.42.08-.16.04-.31-.02-.44-.07-.12-.56-1.35-.77-1.84-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.43 1.03 2.6.12.16 1.75 2.67 4.23 3.75.59.25 1.06.4 1.42.51.59.18 1.13.16 1.56.1.47-.07 1.48-.6 1.69-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z" />
+                  </svg>
+                </span>
                 <div>
                   <p className="font-medium text-white">Interior Consultation</p>
                   <p className="text-xs text-(--text-soft)">WhatsApp - Schedule Meeting</p>
@@ -345,7 +353,11 @@ export function ContactPage() {
                 className="group flex min-h-14 items-center gap-4 rounded-xl border border-white/20 bg-white/5 px-5 transition-all duration-300 hover:border-(--accent)/40 hover:bg-white/10"
                 aria-label={`Call us at ${contactDetails.phoneDisplay}`}
               >
-                <span className="text-2xl" aria-hidden="true">ðŸ“ž</span>
+                <span className="text-2xl" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current">
+                    <path d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.7 11.7 0 0 0 3.67.59 1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.3 22 2 13.7 2 3a1 1 0 0 1 1-1h4.86a1 1 0 0 1 1 1c0 1.27.2 2.5.59 3.67a1 1 0 0 1-.24 1.02l-2.59 2.1Z" />
+                  </svg>
+                </span>
                 <div>
                   <p className="font-medium text-white">{contactDetails.phoneDisplay}</p>
                   <p className="text-xs text-(--text-soft)">Mon-Sat, 9:00 AM - 7:00 PM</p>
@@ -358,7 +370,11 @@ export function ContactPage() {
                 className="group flex min-h-14 items-center gap-4 rounded-xl border border-white/20 bg-white/5 px-5 transition-all duration-300 hover:border-(--accent)/40 hover:bg-white/10"
                 aria-label="Email our team"
               >
-                <span className="text-2xl" aria-hidden="true">âœ‰ï¸</span>
+                <span className="text-2xl" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current">
+                    <path d="M2 6.75A2.75 2.75 0 0 1 4.75 4h14.5A2.75 2.75 0 0 1 22 6.75v10.5A2.75 2.75 0 0 1 19.25 20H4.75A2.75 2.75 0 0 1 2 17.25V6.75Zm2.5-.25a.5.5 0 0 0-.33.87l6.95 6.06a1.5 1.5 0 0 0 1.76 0l6.95-6.06a.5.5 0 0 0-.33-.87H4.5Z" />
+                  </svg>
+                </span>
                 <div>
                   <p className="font-medium text-white">{contactDetails.email}</p>
                   <p className="text-xs text-(--text-soft)">Response within 24 hours</p>
